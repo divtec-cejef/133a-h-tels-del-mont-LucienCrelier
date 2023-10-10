@@ -15,7 +15,80 @@
     <h1>Hôtels à Delémont</h1>
 
     <!-- FORMULAIRE DE RESERVATION -->
-    <!-- au cas ou t'aurais pas compris place ton fromulaire ici. A+ Manfred -->
+    <form id="formHotel" action="https://kode.ch/getpost/" method="post">
+        <ul>
+            <li>
+                <label for="lis_hotel">Hôtel</label>
+                <select name="lis_hotel" id="lis_hotel">
+                    <option selected value="hotelSelection">-- Sélectionnez un hotel --</option>
+                    <option value="hotelCity">Hôtel City</option>
+                    <option value="hotelNational">Hôtel National</option>
+                    <option value="hotelMidi">Hôtel Le Midi</option>
+                    <option value="hotelVictoria">Hôtel Victoria</option>
+                </select>
+            </li>
+            <li>
+                <label for="txt_nbrChambre">Nombre de chambres :</label>
+                <input autofocus name="txt_nbrchambre" id="txt_nbrChambre" type="text"/>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Type de chambre</legend>
+
+                    <div>
+                        <input type="radio" name="opt_type_chambre" id="standard simple" value="standard simple"/>
+                        <label for="standard simple">Standard simple</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="opt_type_chambre" id="standard double" value="standard double"/>
+                        <label for="standard double">Standard double</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="opt_type_chambre" id="supérieure simple" value="supérieure simple"/>
+                        <label for="supérieure simple">Supérieur simple</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="opt_type_chambre" id="supérieure double" value="supérieure double"/>
+                        <label for="supérieure double">Supérieur double</label>
+                    </div>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Options disponibles</legend>
+
+                    <div>
+                        <input type="checkbox" name="Petit déjeuner" id="Petit déjeuner"/>
+                        <label for="Petit déjeuner">Petit déjeuner</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="TV" id="TV"/>
+                        <label for="TV">TV</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Journaux" id="Journaux"/>
+                        <label for="Journaux">Journaux</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Ordinateurs" id="Ordinateurs"/>
+                        <label for="Ordinateurs">Ordinateurs</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Accès Wifi" id="Accès Wifi"/>
+                        <label for="Accès Wifi">Accès Wifi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Animaux de compagnie" id="Animaux de compagnie"/>
+                        <label for="Animaux de compagnie">Animaux de compagnie</label>
+                    </div>
+                </fieldset>
+            </li>
+            <li>
+                <button class="left" type="reset" name="btReset">Reset</button>
+                <button class="right" type="submit">Réserver</button>
+            </li>
+        </ul>
+    </form>
 </div>
 
 <!-- RESERVATION -->
